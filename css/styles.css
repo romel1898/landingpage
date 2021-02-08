@@ -1,0 +1,162 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+@font-face{
+	font-family: lexend;
+	src:url("../fonts/LexendMega-Regular.ttf");
+}
+body{
+	font-family: lexend;
+}
+header{
+	background: url('../images/Music Landing page by Syed Miraj-3.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height:869px;
+}
+#nav button{
+	background:#fd4c5c;
+	border: none;
+	width: 60px;
+	height: 60px;
+	font-size:30px;
+	color: white;
+	cursor: pointer; 
+}
+
+.first{
+	padding:20px;
+	display: grid;
+	grid-template-columns: auto auto;
+
+}
+.btngo{
+	width: 250px;
+	height: 70px;
+	border: none;
+	border-radius:35px;
+	background: #fd4c5c;
+	font-size: 25px; 
+	font-weight: 400;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	margin-top:45px;
+}
+.first ul{
+	list-style: none;
+	margin-top: 50px;
+}
+
+.first ul:nth-child(odd){
+	margin-left: 50px;
+}
+.btngo .fas{
+	margin-left: 5px;
+	position:relative;
+	animation:romel 1s infinite;
+}
+@keyframes romel{
+	from{left: 5px;}
+	to{left:20px;}
+}
+.first ul li{
+	font-size:50px;
+	color: #363636;
+	line-height:70px;
+}
+.color{
+	margin-top: 50px;
+}
+ul li p{
+	font-size:20px;
+	width: 600px;
+	line-height:25px;
+	margin-top: 20px;
+}
+.second{
+	background: url("../images/Music Landing page by Syed Miraj-6.png");
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 790px;
+}
+.second div ul{
+	float: right;
+	margin-top:190px;
+	list-style: none;
+	padding: 10px;
+	margin-right:100px;
+	
+}
+.second div ul li{
+	font-size:50px; 
+	color: white;
+	line-height: 50px;
+}
+footer{
+	background-image: linear-gradient(-45deg, #fd2c5b 0%, #fd4b5b 100%);
+	background-size: cover;
+	height: 455px;
+}
+footer div{
+	text-align: center;
+}
+footer div .container{
+	align-content: center;
+	margin: 0px auto;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	padding: 10px;
+}
+ul li{
+	list-style: none;
+	line-height:37px;
+	color: white;
+}
+a{
+	text-decoration: none;
+	color:white;
+	font-size:14px;
+}
+footer ul li:nth-child(1){
+	margin-top:82px;
+	margin-bottom: 50px;
+}
+@media only screen and ( max-width: 767px){
+	
+	.first{
+		display: block;
+		padding:10px;
+	}
+	.first ul:nth-child(odd){
+		margin-left: 0px;
+	}
+	.color{
+		margin-top: 0px;
+	}
+	img{
+		width: 100%;
+	}
+	.first ul li {
+		font-size:30px;
+	}
+	ul li p{
+		font-size:15px;
+		width: 100%; 
+	}
+	.second div ul{
+		float:left;
+	}
+	footer div .container{
+		grid-template-columns: auto auto;
+	}
+	footer{
+		height: 100%;
+	}
+}
+
+
+
